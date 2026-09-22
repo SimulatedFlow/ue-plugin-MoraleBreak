@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"EngineVersion": "5.8.0",
+	"FriendlyName": "MoraleBreak - Squad Morale, Panic & Rout",
+	"Description": "Enemies that fight to the last man read as machinery, and the usual fix - a float, a threshold and a bool - reads as a bug, because an agent hovering at the line flips between brave and terrified every frame. MoraleBreak gives every agent a morale value and a private nerve that decides how much it takes to shake them, spreads panic through a squad as a pull towards the group's average so a rout looks like one, and separates the level at which somebody breaks from the level at which they rally so nothing can flicker. Events carry a reason all the way to the state change, which is what lets the right line of dialogue play. Frame-rate independent by construction: the decay and the contagion are per second, and the tests prove two half-steps equal one whole one.",
+	"Category": "AI",
+	"CreatedBy": "Silvan Teufel",
+	"CreatedByURL": "https://silvan.teufel-engineering.com",
+	"DocsURL": "https://wiki.teufel-engineering.com/en/MoraleBreak/documentation",
+	"SupportURL": "mailto:teufelsilvan@gmail.com",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "MoraleBreak",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}
